@@ -1,0 +1,15 @@
+# Foundry build artifacts
+out/
+cache/
+broadcast/
+
+# Local environment / secrets — NEVER commit
+.env
+.env.*
+*.key
+*.pem
+testnet-key.json
+*key*.json
+*credential*
+*secret*
+github-pat*

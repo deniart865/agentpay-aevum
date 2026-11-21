@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.26"
+# Aevum testnet's EVM is pre-Cancun: the default Cancun target emits MCOPY,
+# which reverts on-chain ("invalid opcode: MCOPY" in executePayment).
+# Shanghai is the newest target the chain executes correctly.
+evm_version = "shanghai"
+
+[rpc_endpoints]
+aevum = "https://rpc-test.qday.info"
+
+[etherscan]
+aevum = { key = "", url = "https://explorer-test.qday.info/api" }
